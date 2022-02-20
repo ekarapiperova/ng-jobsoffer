@@ -1,4 +1,7 @@
 # ng-job-app
+
+In this aplication you can add,edit,delete you job offer
+
 ## How to run the project
 1. Open ..\ng-jobsoffer\ng-job-app\ng-job-app folder in terminal
 2. run `npm install`

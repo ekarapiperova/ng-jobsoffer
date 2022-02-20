@@ -1,0 +1,33 @@
+article {
+  width: 80%;
+  height: auto;
+  border: 1px solid #234465;
+  margin-bottom: 1%;
+  border-radius: 4px;
+  padding: 2%;
+  font-style: italic;
+  /* border:1px solid blue; */
+
+  width: 90%;
+  display: inline-block;
+  vertical-align: top;
+  
+}
+span{
+  font-weight: bold;
+
+}
+button{
+  text-align: center; 
+  color:rgb(42, 70, 161);
+  padding: 0.25em 1em;
+  margin-top: 1em;
+ border: 1px solid rgb(42, 70, 161);
+ border-radius: 3px;
+ margin-left: 5px;
+ 
+
+}
+button a{
+  text-decoration: none;
+}

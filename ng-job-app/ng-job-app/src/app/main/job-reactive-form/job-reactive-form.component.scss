@@ -1,0 +1,103 @@
+body {
+	background: #FFF;
+	padding: 2rem;
+  text-align: center;
+}
+
+form {
+	max-width: 20rem;
+  border: 1px solid #666;
+  padding: 1rem;
+
+}
+
+form,
+form fieldset,
+form legend,
+form label,
+form input,
+form textarea,
+form select {
+	display: block;
+}
+
+form fieldset,
+form legend {
+	border: 1px solid #666;
+	background: #F9F9F9;
+	border-radius: 0.3rem;
+	box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.1);
+}
+
+form fieldset {
+	padding: 2.5em 2em 2em 2em;
+	position: relative;
+}
+
+form legend {
+	width: 30%;
+	padding: 0.5rem 1rem;
+	left: -1px;
+	top: -1.4rem;
+	
+}
+
+form label {
+	font-weight: bold;
+}
+
+
+.field .input {
+	display: flex;
+	position: relative;
+	align-items: center;
+}
+
+.field .input:after {
+	display: block;
+	content: '';
+}
+
+
+.field .input input {
+	border: none;
+	flex: 1 1 auto;
+	padding: 0.8rem;
+	outline: none;
+	background: transparent;
+	z-index: 2;
+	order: 2;
+}
+
+.field .input .fas {
+	z-index: 2;
+	position: relative;
+	padding: 0 0 0 0.8rem;
+	font-size: 0.9em;
+	order: 1;
+}
+textarea {
+	border-radius: 0.5rem;
+	padding: 0.8rem;
+}
+
+
+.description {
+	width: 17rem;
+	height: 10vh;
+	padding: 2rem;
+	overflow: auto;
+}
+button{
+    text-align: center; 
+   color:rgb(42, 70, 161);
+     padding: 0.25em 1em;
+  	margin-top: 1em;
+   border: 1px solid rgb(42, 70, 161);
+   border-radius: 3px;
+ 
+ }
+ section{
+	 margin: 50px;
+
+ }

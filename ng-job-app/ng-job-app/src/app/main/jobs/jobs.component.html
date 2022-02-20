@@ -1,0 +1,13 @@
+<h3>Jobs List</h3>
+
+<p>Favorite is: {{ favoritejob?.title || '-' }}</p>
+
+<section>
+  <div *ngIf="errorMessage">{{errorMessage}}</div>
+
+  <app-job-item *ngFor="let job of jobs; let i = index"
+                 [job]="job"
+                 [position]="i"
+                 (jobClicked)="onMarkAsFavorite($event)"
+                 (jobDeleted)="onjobDelete($event)"></app-job-item>
+</section>

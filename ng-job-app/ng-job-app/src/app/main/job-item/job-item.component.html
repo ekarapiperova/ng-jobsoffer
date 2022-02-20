@@ -1,0 +1,19 @@
+<article>
+  <h3> {{ job.title }} </h3>
+  <p>
+  <span>Описание:</span>{{ job.description }}
+  </p>
+  <p>
+  <span>Категория:</span>{{ job.category }}
+  </p>
+  <p>
+   <span>Вид:</span>{{ job.type }}
+  </p>
+
+
+  <div>
+    <button (click)="onClick()">Mark as favorite</button>
+    <button (click)="onDelete()">Delete</button>
+    <button><a [routerLink]="['/jobs', 'edit', job.id]">Edit</a></button>
+  </div>
+</article>

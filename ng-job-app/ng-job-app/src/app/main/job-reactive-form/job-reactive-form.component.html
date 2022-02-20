@@ -1,0 +1,42 @@
+<h3>{{ job.id ? 'Update job' : 'Create new job' }}</h3>
+
+<form *ngIf="formGroup"
+      [formGroup]="formGroup"
+      (ngSubmit)="onSubmit()">
+  <div>
+    <label for="title">Title</label>
+    <input type="text"
+           id="title"
+           class="input"
+           formControlName="title">
+  </div>
+
+  <div>
+    <label for="description">Description</label>
+    <textarea type="textarea"
+           id="description"
+           formControlName="description"></textarea>
+  </div>
+
+  <div>
+    <label for="type">Type</label>
+    <select type="text" name="type" defaultValue={type} formControlName="type">
+      <option value="Part-time">Part-time</option>
+      <option value="Full-time">Full-time</option>
+      <option value="Remote">Remote</option>
+
+  </select>
+  </div>
+  <div>
+    <label for="category">Category</label>
+    <select type="text" name="category" defaultValue={category} formControlName="category">
+      <option value="Development">Development</option>
+      <option value="Offic-edministration">Office administration</option>
+      <option value="Other">Other</option>
+      </select>
+  </div>
+
+  <div>
+    <button type="submit">Save</button>
+  </div>
+</form>

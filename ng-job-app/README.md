@@ -1,4 +1,4 @@
-# ng-bookshop-app
+# ng-job-app
 ## How to run the project
 1. Open ..\ng-jobsoffer\ng-job-app\ng-job-app folder in terminal
 2. run `npm install`

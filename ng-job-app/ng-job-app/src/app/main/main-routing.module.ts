@@ -4,6 +4,7 @@ import { JobsComponent } from './jobs/jobs.component';
 import { jobReactiveFormComponent } from './job-reactive-form/job-reactive-form.component';
 import { MainComponent } from './main.component';
 import { AclGuard } from '../guards/acl.guard';
+import { TestComponent } from '../home/test.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,10 @@ const routes: Routes = [
       {
         path: 'jobs',
         component: JobsComponent
+      },
+      {
+        path: 'home',
+        component: TestComponent
       },
       {
         path: 'jobs/create',

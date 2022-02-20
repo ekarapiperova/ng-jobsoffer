@@ -13,7 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { JobsComponent } from './main/jobs/jobs.component';
 import { Router, RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
-import { TestComponent } from './test/test.component';
+import { TestComponent } from './home/test.component';
 
 @NgModule({
   declarations: [

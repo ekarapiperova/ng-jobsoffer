@@ -12,13 +12,13 @@ const routes: Routes = [
     component: MainComponent,
     children: [
       {
-        path: 'jobs',
-        component: JobsComponent
-      },
-      {
-        path: 'home',
+        path: '',
         component: TestComponent
       },
+      {
+        path: 'jobs',
+        component: JobsComponent
+      },      
       {
         path: 'jobs/create',
         component: jobReactiveFormComponent,

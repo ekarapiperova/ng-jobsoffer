@@ -17,23 +17,18 @@ export class jobsService {
   getjobs$(): Observable<job[]> {
     return this.http.get<job[]>(this.url);
   }
-
   getjob$(id: number): Observable<job> {
     const url = `${this.url}/${id}`;
-
     return this.http.get<job>(url);
   }
-
   postjob$(job: job): Observable<job> {
     return this.http.post<job>(this.url, job);
   }
-
   putjob$(job: job): Observable<job> {
     const url = `${this.url}/${job.id}`;
 
     return this.http.put<job>(url, job);
   }
-
   deletejob$(id: number): Observable<void> {
     const url = `${this.url}/${id}`;
 
